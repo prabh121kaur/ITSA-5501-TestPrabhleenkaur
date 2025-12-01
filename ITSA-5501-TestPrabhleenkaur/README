@@ -1,2 +1,7 @@
-Name: Prabhleen Kaur
-Student Id: N01680830
+## GitHub Actions Workflow
+
+This project includes a GitHub Actions workflow named **DevOps Test**.  
+The workflow runs automatically whenever a push is made to the `main` or `master` branch.  
+It performs two steps:
+- Checks out the repository code using `actions/checkout@v4`
+- Prints a confirmation message to verify successful execution
