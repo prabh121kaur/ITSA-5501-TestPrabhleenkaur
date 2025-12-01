@@ -1,0 +1,16 @@
+
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: 'team-email'
+
+receivers:
+  - name: 'team-email'
+    email_configs:
+      - to: 'youremail@gmail.com'
+        from: 'youremail@humber.ca'
+        smarthost: 'smtp.humber.ca:587'
+        auth_username: 'smtp-user'
+        auth_password: 'smtp-pass'
+        send_resolved: true
